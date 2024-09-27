@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.top-nav {
+  width: 100%;
+  height: 40px;
+  background: #3a0ca3;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 150px;
+}
+.top-nav .container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  width: 100%;
+  height: 80px;
+}
+nav .logo {
+  position: absolute;
+  top: 20%;
+  /* transform: translateY(-50%); */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+nav .listingBtn {
+  padding: 15px 26px 15px 26px;
+  color: #ffffff;
+  border-radius: 50px;
+  /* font-family: Poppins; */
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  background: #3a0ca3;
+}
+li {
+  color: #2b2b2b !important;
+}
+.loginBtn {
+  padding: 15px 26px 15px 26px;
+  color: #2b2b2b;
+
+  border-radius: 50px;
+  /* font-family: Poppins; */
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+}
+.navbar {
+  padding: 0 150px;
+}
+.home {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+/* .home .half-circle{
+  content: "";
+  position: absolute;
+  height: 100px;
+  
+left: 50%;
+top: 50%;
+border-radius:100%;
+
+background: linear-gradient(180deg, rgba(76, 201, 240, 0) 0%, rgba(67, 97, 238, 0.3) 100%);
+
+} */
+.home::before {
+  position: absolute;
+  content: "";
+  background: url("./images/rectangle.png") no-repeat center center;
+  width: 100%;
+  height: 100%;
+  background-size: cover; /* Fills the entire container */
+  background-position: center;
+  left: 0%;
+  top: 0px;
+}
+.home .data {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: space-around; */
+  gap: 20px;
+  height: 100%;
+}
+.left-side,
+.right-side {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.left-content {
+  padding: 10px 30px;
+  /* width: 100%; */
+}
+.left-content span {
+  font-family: Poppins;
+  font-size: 19.4px;
+  font-weight: 500;
+  line-height: 29.1px;
+  letter-spacing: 0.15em;
+  text-align: left;
+  color: #4361ee;
+}
+.left-content h1 {
+  font-family: Poppins;
+  font-size: 57.3px;
+  font-weight: 600;
+  line-height: 65px;
+  text-align: left;
+  color: #0b090a;
+}
+.left-content p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: #808080;
+}
+.left-inside-content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.home .form {
+  width: 420px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 630px;
+  padding: 40px;
+  padding-bottom: 60px;
+  background: white;
+  position: relative;
+}
+input,
+textarea {
+  background: #d4d4d433;
+  border-radius: 10px;
+  padding: 15px 10px !important;
+  outline: none;
+}
+
+.form span {
+  display: block;
+  padding: 20px 0;
+  width: 100%;
+  border-bottom: 3px solid #3a0ca3;
+  position: relative;
+  z-index: 20;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+.form::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  top: 104.5px;
+  left: 0;
+  background-color: rgba(170, 170, 170, 1);
+}
+.form button {
+  width: 100%;
+  background: #3a0ca3;
+  border-radius: 50px;
+  color: white;
+  height: 60px;
+}
+.secto {
+  margin-top: 0;
+  bottom: -10px;
+}
+.sec2-left-seide,
+.sec2-right-seide {
+  border-radius: 100px;
+}
+.last::before {
+  display: none;
+}
+.last-btn {
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 80%;
+}
+@media only screen and (max-width: 1279px) {
+  .data {
+    padding-left: 0!important;
+    padding-right: 0!important;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .data {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .left-side, .right-side {
+    width: 100%;
+  
+}
+.home .form {
+width: 100%;
+
+}
+.data {
+  padding-left: 2rem!important;
+  padding-right: 2rem!important;
+}
+.secto{
+  flex-direction: column;
+  gap: 20px;
+  padding: 70px 20px;
+}  
+}
