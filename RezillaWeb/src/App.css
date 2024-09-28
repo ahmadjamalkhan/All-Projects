@@ -95,6 +95,9 @@ background: linear-gradient(180deg, rgba(76, 201, 240, 0) 0%, rgba(67, 97, 238, 
   left: 0%;
   top: 0px;
 }
+.collapser {
+  display: none;
+}
 .home .data {
   display: flex;
   /* align-items: center; */
@@ -210,8 +213,8 @@ textarea {
 }
 @media only screen and (max-width: 1279px) {
   .data {
-    padding-left: 0!important;
-    padding-right: 0!important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }
 @media only screen and (max-width: 1023px) {
@@ -220,21 +223,62 @@ textarea {
     align-items: center;
     justify-content: space-around;
   }
-  .left-side, .right-side {
+  .left-side,
+  .right-side {
     width: 100%;
-  
+  }
+  .home .form {
+    width: 100%;
+  }
+  .data {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  .secto {
+    flex-direction: column;
+    gap: 30px !important;
+    padding: 70px 20px;
+  }
 }
-.home .form {
-width: 100%;
+.respo {
+  position: absolute;
+  background: #ffffff;
 
+  box-shadow: 10px 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  right: -600px;
+  width: 50%;
+  top: 0;
+  height: 100vh;
+  z-index: 2;
+  padding: 10px 20px;
 }
-.data {
-  padding-left: 2rem!important;
-  padding-right: 2rem!important;
+.respo.show {
+  right: -127px;
 }
-.secto{
+.respo a {
+  /* color: white; */
+}
+.respo .loginBtn {
+  /* color: red; */
+}
+.respo ul {
   flex-direction: column;
-  gap: 20px;
-  padding: 70px 20px;
-}  
+  gap: 30px;
+}
+.respo .buttons button {
+  justify-content: center;
+}
+.respo .buttons {
+  flex-direction: column;
+}
+nav .logo {
+  left: 20px;
+}
+.collapser {
+  position: absolute;
+  display: block;
+  right: 20px;
+  top: 40%;
+  cursor: pointer;
 }

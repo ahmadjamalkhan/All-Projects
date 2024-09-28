@@ -41,13 +41,12 @@ const RealEstateSection = () => {
           <div className="left-content">
             <div className="left-inside-content">
               <span>WHO ARE WE</span>
-
               <h1
                 style={{
-                  textWrap: "nowrap",
+                  fontSize: "39px",
                 }}
               >
-                Assisting individuals in <br /> locating the appropriate <br />
+                Assisting individuals in locating the appropriate 
                 real estate.
               </h1>
               <p>
