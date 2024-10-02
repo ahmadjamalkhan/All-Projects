@@ -13,8 +13,8 @@ function Navbar() {
     setShowMenu(!showMenu);
   };
   return (
-    <div className="navBar shadow-sm">
-      <nav className="container mx-auto">
+    <div className="navBar shadow-sm  ">
+      <nav className={`container nav-container mx-auto ${showMenu?"overflow-visible":"overflow-hidden"}`}>
         <div className="logo">
           <img src={logo} alt="" />
         </div>
@@ -26,7 +26,7 @@ function Navbar() {
         >
           <img src={hanb} alt="" />
         </div>
-        <div className={`respo ${showMenu ? "show":""} `}>
+        <div className={`respo ${showMenu ? "show":""}`}>
           <div className="menu ">
             {/* <div className="hidden w-full md:block md:w-auto" id="navbar-default"> */}
             <ul className="font-medium flex p-4 md:p-0 mt-4 ">

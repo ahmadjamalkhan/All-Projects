@@ -14,7 +14,7 @@ function App() {
       <Navbar />
       <Home/>
       <Popular/>
-      <Trusted/>
+      {/* <Trusted/> */}
       <RealEstateSection/>
     </>
   );

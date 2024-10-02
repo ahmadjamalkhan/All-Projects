@@ -1,0 +1,6 @@
+.app-container{
+    display: flex;
+}
+.sidbar{
+    min-height: 800px;
+}
