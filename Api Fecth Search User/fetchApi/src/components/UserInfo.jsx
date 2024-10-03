@@ -35,7 +35,7 @@ function UserInfo({ users }) {
           </tr>
         </thead>
 
-        {filterUser.length > 0 && searchTerm ? (
+        {filterUser.length > 0 ? (
           filterUser.map((user) => {
             const { name, username, email, address } = user;
             const { city, street } = user.address;
