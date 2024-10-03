@@ -1,0 +1,144 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Ensures rounded corners for the table */
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4; /* Light gray background */
+}
+
+.container {
+  /* max-width: 1200px; */
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff; /* White background for the container */
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.title {
+  text-align: center;
+  color: #34495e; /* Dark gray for title */
+  margin-bottom: 20px;
+}
+
+.search-box {
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  padding: 15px 20px;
+  border: 1px solid #ddd;
+  border-radius: 25px; /* Rounded corners */
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+.search-input:focus {
+  outline: none;
+  border: 1px solid #3498db; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Blue shadow on focus */
+}
+
+.item-list {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd; /* Separator line */
+  transition: background-color 0.3s;
+}
+
+.item:hover {
+  background-color: #ecf0f1; /* Light gray on hover */
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+th {
+  background: linear-gradient( #3498db, #3498db); /* Gradient background for headers */
+  color: white!important;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #ecf0f1; /* Light gray for even rows */
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff; /* White for odd rows */
+}
+
+tbody tr:hover {
+  background-color: #2980b9; /* Darker teal on hover */
+  color: white; /* White text on hover */
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+caption {
+  margin: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #34495e; /* Dark gray for caption */
+}
+
+td {
+  position: relative;
+  border-radius: 5px; /* Rounded corners for table cells */
+}
+
+td::before {
+  content: attr(data-label);
+  position: absolute;
+  left: 10px;
+  width: 45%;
+  padding-left: 10px;
+  text-align: left;
+  font-weight: bold;
+  color: #2980b9; /* Blue color for labels */
+  font-size: 14px; /* Slightly smaller font size for labels */
+}
+
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+      /* display: block; */
+  }
+
+  th {
+  font-size: 14px;
+  }
+
+  tr {
+     font-size: 12px;
+  }
+
+  td {
+     font-size: 10px;
+  }
+
+  td::before {
+      /* Kept for mobile view, already defined above */
+  }
+}
