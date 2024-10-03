@@ -93,7 +93,7 @@ function App() {
                 <div
                   key={todo.id}
                   className={` ${
-                    todo.isComplete ? "bg-green-300" : ""
+                    todo.isComplete ? "complteted" : ""
                   } max-w-4xl mx-auto  todo flex items-center justify-between bg-white p-4 rounded-lg shadow hover:shadow-lg transition duration-300`}
                 >
                   <div className="flex items-center">
@@ -118,7 +118,7 @@ function App() {
                     <button
                       className={`bg-violet-800 hover:bg-violet-950 cursor-pointer p-2 text-sm font-bold text-white rounded-md ${
                         todo.isComplete
-                          ? "bg-indigo-300 hover:bg-indigo-300 cursor-not-allowed"
+                          ? "disabled"
                           : ""
                       }`}
                       disabled={todo.isComplete}

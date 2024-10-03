@@ -1,0 +1,11 @@
+.disabled{
+   background:  rgb(170, 112, 211)!important;
+    cursor: not-allowed;
+}
+.disabled:hover{
+    background: rgb(220, 171, 255);
+    cursor: not-allowed;
+}
+.complteted{
+    background: rgb(183, 255, 183)!important;
+}
