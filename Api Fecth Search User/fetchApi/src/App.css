@@ -127,15 +127,39 @@ td::before {
   }
 
   th {
-  font-size: 14px;
+  font-size: 10px;
   }
 
   tr {
-     font-size: 12px;
+     font-size: 8px;
   }
 
   td {
-     font-size: 10px;
+     font-size: 8px;
+  }
+
+  td::before {
+      /* Kept for mobile view, already defined above */
+  }
+}
+@media (max-width: 494px) {
+  table, thead, tbody, th, td, tr {
+      /* display: block; */
+  }
+input{
+  font-size: 12px;
+  padding: 12px 20px;
+}
+  th {
+  font-size: 7px;
+  }
+
+  tr {
+     font-size: 5px;
+  }
+
+  td {
+     font-size: 5px;
   }
 
   td::before {
