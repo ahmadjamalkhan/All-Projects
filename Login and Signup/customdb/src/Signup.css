@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+/* Container for the signup form */
+.container {
+    background-color: #ffffff;
+    padding: 80px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: auto;
+    margin-top: 80px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Smooth hover effect for the container */
+.container:hover {
+    /* transform: scale(1.02); */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    
+}
+
+/* Heading style */
+.heading {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;margin-top: 0;
+}
+
+/* Input group container */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Label style */
+.label {
+    display: block;
+    margin-bottom: 8px;
+    color: #34495e;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* Input field style */
+.input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    color: #2c3e50;
+}
+
+/* Input focus effect */
+.input:focus {
+    border-color: #3498db;
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.4);
+}
+
+/* Button container */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/* Common button style */
+button {
+    padding: 12px;
+    width: 48%;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+/* Signup button style */
+.signup-button {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: #fff;
+    margin-top: 30px;
+}
+
+/* Signin button style */
+.signin-button {
+    background: linear-gradient(45deg, #28a745, #218838);
+    margin-top: 30px;
+    color: #fff;
+}
+
+/* Button hover and active effect */
+.signup-button:hover, .signin-button:hover {
+    opacity: 0.9;
+    transform: translateY(-4px); /* Lift effect */
+}
+
+/* Active button effect */
+button:active {
+    transform: translateY(0);
+}
+
+/* Button shadow */
+button:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 450px) {
+    .container {
+        width: 90%;
+        padding: 30px;
+    }
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+p{color: #2c3e50;}

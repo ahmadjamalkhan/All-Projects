@@ -1,0 +1,20 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;gap: 20px;
+}
+.home button{
+    background:#0dcaf0;color: white;width: 10%;
+}
+.home h1{
+    color: white;
+}
+table{
+        /* min-width: 100px; */
+        width: 0px!important;
+        /* width: 10%; */
+        text-align: center;
+        margin-top: 100px;
+}
