@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from "uuid";
 import { useNavigate } from "react-router-dom";
 
 
-const Signup = () => {
+const Signup = ({setLogin,setUser}) => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -43,7 +43,12 @@ fetchData()
         console.log(data);
         setUserData(prevUsers=>[...prevUsers,data])
         clearInput()
-        navigate("/home")
+        navigate("/dashboard")
+      setLogin(true)
+      setUser(username)
+
+
+
       }
     } catch (error) {
       console.error("data not available yet");
@@ -97,7 +102,12 @@ fetchData()
         <button className="signup-button" onClick={handleUsers}>
           Signup
         </button>
-        <button className="signin-button" onClick={()=>navigate('/')}>Signin</button>
+
+
+        <span className="login-fun">
+          Already have an Acoount?
+          <button className="signin-button" onClick={()=>navigate('/signin')}>Login</button>
+          </span> 
       </div>
     </div>
   );

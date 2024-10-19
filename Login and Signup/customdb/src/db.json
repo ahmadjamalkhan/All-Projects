@@ -4,7 +4,19 @@
       "id": "1d0ccc67-ac76-42b3-b5de-6b906cdd6469",
       "username": "AhmadJamalKhan",
       "email": "ahmadjamalit@gmail.com",
-      "password": "123456789"
+      "password": "123"
+    },
+    {
+      "id": "8bc2a62e-8da5-4b9a-800b-4524d1822287",
+      "username": "Ahmad",
+      "email": "abrarjalalaj@gmail.com",
+      "password": "1"
+    },
+    {
+      "id": "dc597f12-05df-4f22-a2ff-a33d4bd9eac8",
+      "username": "AbrarKhan",
+      "email": "abrarkj1212@gmail.com",
+      "password": "1b2b3b4b5b"
     }
   ]
 }

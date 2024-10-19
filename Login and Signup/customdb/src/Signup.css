@@ -70,10 +70,19 @@
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+    flex-direction: column;justify-content: center;
+    align-items: center;
+
 }
 
 /* Common button style */
-button {
+
+
+/* Signup button style */
+.signup-button {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: #fff;
+    margin-top: 30px;
     padding: 12px;
     width: 48%;
     border: none;
@@ -83,13 +92,8 @@ button {
     cursor: pointer;
     transition: all 0.3s ease;
     letter-spacing: 0.5px;
-}
-
-/* Signup button style */
-.signup-button {
-    background: linear-gradient(45deg, #6a11cb, #2575fc);
-    color: #fff;
-    margin-top: 30px;
+    width: 100%;
+    background: #28a745;
 }
 
 /* Signin button style */
@@ -97,21 +101,27 @@ button {
     background: linear-gradient(45deg, #28a745, #218838);
     margin-top: 30px;
     color: #fff;
+    
 }
 
 /* Button hover and active effect */
-.signup-button:hover, .signin-button:hover {
+.signup-button:hover {
     opacity: 0.9;
     transform: translateY(-4px); /* Lift effect */
 }
 
+.login-fun button{
+    background: none;
+    border: none;
+    color: #6a11cb;
+}
 /* Active button effect */
 button:active {
     transform: translateY(0);
 }
 
 /* Button shadow */
-button:hover {
+.signup-button:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 

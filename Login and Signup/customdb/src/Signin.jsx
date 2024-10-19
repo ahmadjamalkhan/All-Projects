@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Signup.css"; // CSS file import kar rahe hain
 import { useNavigate, Link } from "react-router-dom"; // useNavigate for navigation
 
-const Signin = () => {
+const Signin = ({ setLogin,setUser }) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [userData, setUserData] = useState([]);
@@ -34,7 +34,10 @@ const Signin = () => {
     if (userExists) {
       alert("Login successful!");
       clearInput();
-      navigate("/home"); // Navigate to home after successful login
+      setLogin(true);
+      setUser(username)
+
+      navigate("/dashboard"); // Navigate to home after successful login
     } else {
       alert("Invalid username or password");
     }
@@ -72,10 +75,14 @@ const Signin = () => {
       </div>
       <div className="buttons">
         <button className="signup-button" onClick={handleUsers}>
-          Signin
+          Login
         </button>
-        <button className="signin-button" onClick={()=>navigate('/signup')}>Signup</button>
-
+        <span className="login-fun">
+          You dont have an Acoount?
+          <button className="signin-button" onClick={() => navigate("/signup")}>
+            Signup
+          </button>
+        </span>
       </div>
     </div>
   );

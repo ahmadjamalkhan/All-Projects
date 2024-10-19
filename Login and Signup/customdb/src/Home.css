@@ -18,3 +18,15 @@ table{
         text-align: center;
         margin-top: 100px;
 }
+.nav-login-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    gap: 10px;
+}
+.nav-login-btn button{
+    height: 40px;
+    width: 120px;
+    font-size: 16px;
+}

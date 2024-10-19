@@ -1,0 +1,208 @@
+.cart {
+  margin-top: 100px;
+  max-width: 1200px; /* Set a maximum width */
+  margin: 100px auto; /* Center cart with top margin */
+  padding: 20px;
+  background-color: #ffffff; /* White background */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.cart-item-title {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr; /* Adjusted for layout */
+  align-items: center;
+  color: grey;
+  font-size: max(1vw, 12px);
+  font-weight: bold; /* Bold title */
+  padding: 15px; /* Add padding */
+  background-color: #f2f2f2; /* Light background for titles */
+  border-bottom: 2px solid #ddd; /* Light border */
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 10px; /* Space between items */
+}
+
+.cart-items-item {
+  display: grid; /* Use grid for alignment */
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr; /* Same layout as title */
+  align-items: center; /* Center items vertically */
+  margin: 10px 0;
+  padding: 15px; /* Add padding */
+  border-bottom: 1px solid #ddd; /* Light border for items */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.cart-items-item:hover {
+  background-color: #f9f9f9; /* Light hover effect */
+}
+
+.cart-items-item img {
+  width: 50px; /* Fixed width for images */
+  border-radius: 5px; /* Slightly rounded corners for images */
+}
+
+.cart-item-remove {
+  background-color: #ff4d4f; /* Red background for remove button */
+  border: none;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%; /* Full round button */
+  width: 40px; /* Fixed width */
+  height: 40px; /* Fixed height */
+  transition: background-color 0.3s, transform 0.3s; /* Transition effects */
+}
+
+.cart-item-remove:hover {
+  background-color: #d9363e; /* Darker red on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+hr {
+  border: none; /* Remove default border */
+  height: 2px; /* Set height of the line */
+  background-color: #ddd; /* Light grey background color */
+  margin: 20px 0; /* Margin above and below the line */
+  border-radius: 5px; /* Rounded corners for the line */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: soft shadow for depth */
+}
+.cart-bottom {
+  display: flex; /* Flexbox for horizontal layout */
+  justify-content: space-between; /* Space between sections */
+  margin-top: 20px; /* Space above */
+}
+
+.cart-total {
+  /* flex: 1; Left section takes available space */
+  width: 50%;
+
+  padding: 20px; /* Padding inside total */
+  /* background-color: tomato; Tomato background */
+  border-radius: 10px; /* Rounded corners */
+  margin-right: 20px; /* Space between total and promo */
+}
+
+.cart-promocode {
+  width: 50%;
+  padding: 20px; /* Padding for promo code */
+  /* background-color: black; Black background */
+  border-radius: 10px; /* Rounded corners */
+  /* color: white; White text */
+}
+
+.cart-total h2 {
+  margin-bottom: 15px; /* Space below the heading */
+  font-size: 24px; /* Large font size */
+  /* color: #fff; White color for heading */
+}
+
+.cart-total-details-container {
+  width: 100%; /* Full width for details */
+}
+
+.cart-total-details {
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Space between items */
+  padding: 10px 0; /* Vertical padding */
+}
+
+.cart-total-details p {
+  margin: 0; /* Remove default margin */
+  font-size: 16px; /* Font size for details */
+  color: grey; /* White color for details */
+}
+
+.cart-total-details b {
+  font-size: 18px; /* Slightly larger for total */
+  /* color: #fff; White color for emphasis */
+}
+
+button.checkout-button {
+  width: 50%; /* Set width to 50% */
+  margin-top: 20px; /* Space above button */
+  padding: 10px 0; /* Padding inside button */
+  background-color: tomato; /* Tomato background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease; /* Smooth transition */
+  display: block; /* Block display to take full width */
+  text-align: center; /* Center text */
+}
+
+button.checkout-button:hover {
+  background-color: #c63939; /* Darker tomato on hover */
+}
+
+.cart-promocode p {
+  margin-bottom: 10px; /* Space below text */
+  font-size: 16px; /* Font size for description */
+  color: grey; /* White color for text */
+}
+
+.cart-promocode-input {
+  display: grid;
+  grid-template-columns: 5fr 3fr; /* Flexbox for alignment */
+  align-items: center; /* Center items vertically */
+}
+
+.cart-promocode-input input {
+  padding: 10px; /* Padding inside input */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+  flex: 1; /* Take remaining space */
+  margin-right: 10px; /* Space between input and button */
+}
+
+.cart-promocode-input .submit-button {
+  width: 100%; /* Set width to 50% */
+  padding: 10px 0; /* Padding inside button */
+  background-color: black; /* Black background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease; /* Transition effect */
+  display: block; /* Block display to take full width */
+  text-align: center; /* Center text */
+}
+
+.cart-promocode-input .submit-button:hover {
+  background-color: #333; /* Darker black on hover */
+}
+@media (max-width: 884px) {
+    .cart-bottom {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      }
+      .cart-promocode{
+        width: 100%;
+      }
+      .cart-total{
+        width: 100%;
+        text-align: center;
+      }
+}
+
+@media (max-width: 768px) {
+  .cart-item-title,
+  .cart-items-item {
+    grid-template-columns: repeat(3, 1fr); /* Adjust grid on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-item-title,
+  .cart-items-item {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Further adjustment on very small screens */
+  }
+}
